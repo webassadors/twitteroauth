@@ -1,0 +1,6 @@
+{
+    "name": "risseraka/twitteroauth",
+    "license": "MIT",
+    "type": "project",
+    "description": "PHP library for working with Twitter's OAuth API."
+}
