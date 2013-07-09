@@ -254,6 +254,12 @@ class TwitterOAuth {
     return $this->bearer_access_token;
   }
 
+  function setBearerToken($token)
+  {
+    $this->bearer_access_token = $token;
+    $this->generateEncodedBearerCredentials();
+  }
+
   function generateEncodedBearerCredentials()
   {
     $bearer_credentials = urlencode($this->consumer->key) . ":" . urlencode($this->consumer->secret );
